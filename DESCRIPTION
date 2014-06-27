@@ -1,9 +1,23 @@
 Package: easingr
-Type: Package
-Title: What the package does (short line)
-Version: 1.0
-Date: 2014-06-26
-Author: Who wrote it
-Maintainer: Who to complain to <yourfault@somewhere.net>
-Description: More about what it does (maybe more than one line)
-License: What license is it under?
+Title: Fetch the Cleveland Federal Reserve Bank easing policy tool data.
+Version: 1.0.0
+Date: 2014-06-27
+Author: Matt Barry <mrb@softisms.com>
+Maintainer: Matt Barry <mrb@softisms.com>
+Description: Forms queries to submit to the Cleveland Federal Reserve Bank web
+    site's easing policy tools data site.  Provides various query functions
+    according to the easing data desired.  By default the download includes
+    easing tool weekly time series data starting January 2007.  The functions
+    return a class of type easing which contains a list of items related to the
+    query and its graphical presentation.  The list includes the time series
+    data as an xts object.  The package provides two lattice time series plots
+    to render the data in a manner similar to the bank's own presentation.
+License: MIT + file LICENSE
+URL: https://github.com/mrbcuda/easingr
+BugReports: https://github.com/mrbcuda/easingr/issues
+Imports:
+    utils,
+    xts,
+    lattice,
+    latticeExtra
+Roxygen: list(wrap = FALSE)
