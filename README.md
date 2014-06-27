@@ -1,5 +1,5 @@
-Federal Reserve Bank Credit Easing Policy Tools
-===============================================
+Federal Reserve Bank Credit Easing
+==================================
 
 The R package ```easingr``` provides convenient access to the Cleveland Federal Reserve Bank's Credit Easing Policy Tools data.  The package provides data download functions and some representative plots along the same categories as provided by the bank. 
 
