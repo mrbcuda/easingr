@@ -1,6 +1,8 @@
 Credit Easing Policy Tools
 ==========================
 
+[Now on CRAN](http://cran.r-project.org/web/packages/easingr/index.html).
+
 The R package ```easingr``` provides convenient access to the Credit Easing Policy Tools data provided by the Federal Reserve Bank of Cleveland.  The package provides data download functions and some representative plots along the same categories as provided by the bank. See the [FRB's terms of use](http://www.clevelandfed.org/utilities/terms_of_use.cfm?DCS.nav=Footer) regarding these data.   
 
 As a simple example of gathering data and drawing simple plots consider the R code
