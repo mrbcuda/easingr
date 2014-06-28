@@ -64,10 +64,9 @@ getEasingData <- function(id=NA,startDate="012007",endDate="122100") {
 #' @export
 #' @seealso getEasingData getEasingDetails getEasingLending getEasingCreditDepository getEasingCreditExtensions getEasingProvidingLiquidity getEasingMaidenLane getEasingTraditionalHoldings  getEasingAgencyDebt getEasingLongTermPurchases
 #' @examples
-#' \dontrun{
 #' es <- getEasingSummary()
 #' head(es$df)
-#' }
+#' 
 getEasingSummary <- function(startDate="012007",endDate="122100") {
   fedColors = c(
     "#ce9257", # traditional security holdings
@@ -114,10 +113,9 @@ getEasingSummary <- function(startDate="012007",endDate="122100") {
 #' @export
 #' @seealso getEasingData getEasingSummary getEasingLending getEasingCreditDepository getEasingCreditExtensions getEasingProvidingLiquidity getEasingMaidenLane getEasingTraditionalHoldings  getEasingAgencyDebt getEasingLongTermPurchases
 #' @examples
-#' \dontrun{
-#' ed <- getEasingDetail()
+#' ed <- getEasingDetails()
 #' head(ed$df)
-#' }
+#' 
 getEasingDetails <- function(startDate="012007",endDate="122100") {
   fedColors = c(
     "#be7c45", # traditional security
@@ -166,10 +164,9 @@ getEasingDetails <- function(startDate="012007",endDate="122100") {
 #' @export
 #' @seealso getEasingData getEasingSummary getEasingDetails getEasingCreditDepository getEasingCreditExtensions getEasingProvidingLiquidity getEasingMaidenLane getEasingTraditionalHoldings  getEasingAgencyDebt getEasingLongTermPurchases
 #' @examples
-#' \dontrun{
 #' el <- getEasingLending()
 #' head(el$df)
-#' }
+#' 
 getEasingLending <- function(startDate="012007",endDate="122100") {
   fedColors = c(
     "#be7c45", # repurchase agreements
@@ -200,10 +197,9 @@ getEasingLending <- function(startDate="012007",endDate="122100") {
 #' @export
 #' @seealso getEasingData getEasingSummary getEasingDetails getEasingLending getEasingCreditExtensions getEasingProvidingLiquidity getEasingMaidenLane getEasingTraditionalHoldings  getEasingAgencyDebt getEasingLongTermPurchases
 #' @examples
-#' \dontrun{
 #' cd <- getEasingCreditDepository()
 #' head(cd$df)
-#' }
+#' 
 getEasingCreditDepository <- function(startDate="012007",endDate="122100") {
   fedColors = c(
     "#d1955a", # primary credit
@@ -230,10 +226,9 @@ getEasingCreditDepository <- function(startDate="012007",endDate="122100") {
 #' @export
 #' @seealso getEasingData getEasingSummary getEasingDetails getEasingLending getEasingCreditDepository getEasingProvidingLiquidity getEasingMaidenLane getEasingTraditionalHoldings  getEasingAgencyDebt getEasingLongTermPurchases
 #' @examples
-#' \dontrun{
 #' ce <- getEasingCreditExtensions()
 #' head(ce$df)
-#' }
+#' 
 getEasingCreditExtensions <- function(startDate="012007",endDate="122100") {
   fedColors <- c(
     "#d1955a", # primary/other broker dealer
@@ -261,10 +256,9 @@ getEasingCreditExtensions <- function(startDate="012007",endDate="122100") {
 #' @export
 #' @seealso getEasingData getEasingSummary getEasingDetails getEasingLending getEasingCreditDepository getEasingCredtExtensions getEasingMaidenLane getEasingTraditionalHoldings  getEasingAgencyDebt getEasingLongTermPurchases
 #' @examples
-#' \dontrun{
 #' pl <- getEasingProvidingLiquidity()
 #' head(pl$df)
-#' }
+#' 
 getEasingProvidingLiquidity <- function(startDate="012007",endDate="122100") {
   fedColors = c(
     "#c89365", # maiden lane
@@ -292,10 +286,9 @@ getEasingProvidingLiquidity <- function(startDate="012007",endDate="122100") {
 #' @export
 #' @seealso getEasingData getEasingSummary getEasingDetails getEasingLending getEasingCreditDepository getEasingCredtExtensions getEasingProvidingLiquidity getEasingTraditionalHoldings  getEasingAgencyDebt getEasingLongTermPurchases
 #' @examples
-#' \dontrun{
 #' ml <- getEasingMaidenLane()
 #' head(ml$df)
-#' }
+#' 
 getEasingMaidenLane <- function(startDate="012007",endDate="122100") {
   fedColors <- c(
     "#d1955a", # maiden lane 1
@@ -320,10 +313,9 @@ getEasingMaidenLane <- function(startDate="012007",endDate="122100") {
 #' @export
 #' @seealso getEasingData getEasingSummary getEasingDetails getEasingLending getEasingCreditDepository getEasingCredtExtensions getEasingProvidingLiquidity getEasingMaidenLane  getEasingAgencyDebt getEasingLongTermPurchases
 #' @examples
-#' \dontrun{
 #' th <- getEasingTraditionalHoldings()
 #' head(th$df)
-#' }
+#' 
 getEasingTraditionalHoldings <- function(startDate="012007",endDate="122100") {
   fedColors = c(
     "#cb9668" # treasury holdings
@@ -347,10 +339,9 @@ getEasingTraditionalHoldings <- function(startDate="012007",endDate="122100") {
 #' @export
 #' @seealso getEasingData getEasingSummary getEasingDetails getEasingLending getEasingCreditDepository getEasingCredtExtensions getEasingProvidingLiquidity getEasingMaidenLane  getEasingTraditionalHoldings getEasingLongTermPurchases
 #' @examples
-#' \dontrun{
 #' ad <- getEasingAgencyDebt()
 #' head(ad$df)
-#' }
+#' 
 getEasingAgencyDebt <- function(startDate="012007",endDate="122100") {
   fedColors = c(
     "#cb9668", # federal agency debt
@@ -374,10 +365,9 @@ getEasingAgencyDebt <- function(startDate="012007",endDate="122100") {
 #' @export
 #' @seealso getEasingData getEasingSummary getEasingDetails getEasingLending getEasingCreditDepository getEasingCredtExtensions getEasingProvidingLiquidity getEasingMaidenLane  getEasingTraditionalHoldings getEasingAgencyDebt
 #' @examples
-#' \dontrun{
 #' lt <- getEasingLongTermPurchases()
 #' head(lt$df)
-#' }
+#' 
 getEasingLongTermPurchases <- function(startDate="012007",endDate="122100") {
   fedColors = c(
     "#cb9668" # treasury purchases

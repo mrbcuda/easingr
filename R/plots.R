@@ -6,12 +6,16 @@
 #' @export
 #' @seealso easingLineChart easingAreaChart getEasingData
 #' @examples
-#' \dontrun{
+#' require(lattice)
 #' ad <- getEasingAgencyDebt()
 #' xyplot(ad)
-#' }
+#' 
 xyplot.easing <- function(x,...) {
-  xyplot(x$df,main=x$main,ylab=x$ylab,xlab=NULL,...)
+  xyplot(x$df,
+         main=x$main,
+         sub="Source: Federal Reserve Bank of Cleveland",
+         ylab=x$ylab,
+         xlab=NULL,...)
 }
 
 
@@ -25,10 +29,9 @@ xyplot.easing <- function(x,...) {
 #' @export
 #' @seealso xyplot.easing easingAreaChart getEasingData
 #' @examples
-#' \dontrun{
-#' sd <- getEasingSummary()
-#' easingLineChart(sd)
-#' }
+#' s <- getEasingSummary()
+#' easingLineChart(s)
+#' 
 easingLineChart <- function(e) {
   stopifnot(class(e) == "easing")
   
@@ -36,6 +39,7 @@ easingLineChart <- function(e) {
          par.settings = list(superpose.symbol = list(pch=15, col=e$colors, cex=1.2),
                              superpose.line = list(lwd=2, lty=1, col=e$colors)),
          main=e$main,
+         sub="Source: Federal Reserve Bank of Cleveland",
          ylab=e$ylab,
          xlab=NULL,
          superpose=TRUE,
@@ -61,10 +65,9 @@ easingLineChart <- function(e) {
 #' @export
 #' @seealso xyplot.easing easingLineChart getEasingData
 #' @examples
-#' \dontrun{
 #' ed <- getEasingDetails()
 #' easingAreaChart(ed)
-#' }
+#'
 easingAreaChart <- function(e) {
   stopifnot(class(e) == "easing")
   
@@ -85,6 +88,7 @@ easingAreaChart <- function(e) {
          par.settings = list(superpose.symbol = list(pch=15, col=rev(e$colors), cex=1.2),
                              superpose.polygon = list(lwd=2, lty=1, col=rev(e$colors))),
          main=paste(e$main,ifelse(ncol(df)>1,"(Stacked)","")),
+         sub="Source: Federal Reserve Bank of Cleveland",
          ylab=e$ylab,
          xlab=NULL,
          superpose=TRUE,

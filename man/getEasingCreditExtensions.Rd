@@ -25,10 +25,8 @@ Downloads the Cleveland FRB data product for credit easing policy credit extensi
 }
 }
 \examples{
-\dontrun{
 ce <- getEasingCreditExtensions()
 head(ce$df)
-}
 }
 \seealso{
 getEasingData getEasingSummary getEasingDetails getEasingLending getEasingCreditDepository getEasingProvidingLiquidity getEasingMaidenLane getEasingTraditionalHoldings  getEasingAgencyDebt getEasingLongTermPurchases

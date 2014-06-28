@@ -25,10 +25,8 @@ Downloads the Cleveland FRB data product for credit easing policy tools Maiden L
 }
 }
 \examples{
-\dontrun{
 ml <- getEasingMaidenLane()
 head(ml$df)
-}
 }
 \seealso{
 getEasingData getEasingSummary getEasingDetails getEasingLending getEasingCreditDepository getEasingCredtExtensions getEasingProvidingLiquidity getEasingTraditionalHoldings  getEasingAgencyDebt getEasingLongTermPurchases

@@ -15,10 +15,8 @@ Provides a convenience function for passing an \code{easing} object to \code{xyp
 Provides several assumptions about the display of the \code{easing} data to correspond to similar presentations at the Cleveland Fed's data site.
 }
 \examples{
-\dontrun{
-sd <- getEasingSummary()
-easingLineChart(sd)
-}
+s <- getEasingSummary()
+easingLineChart(s)
 }
 \seealso{
 xyplot.easing easingAreaChart getEasingData

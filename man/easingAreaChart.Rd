@@ -15,10 +15,8 @@ Provides a convenience function for passing an \code{easing} object to \code{xyp
 Provides several assumptions about the display of the \code{easing} data to correspond to similar presentations at the Cleveland Fed's data site.  To implement the stacked area chart the function first computes the column-wise value accumulations, then passes these values to the \code{latticeExtra} \code{xyarea} polygon rendering tools.  Plots the columns in reverse stacking order to show the desired overlaps.
 }
 \examples{
-\dontrun{
 ed <- getEasingDetails()
 easingAreaChart(ed)
-}
 }
 \seealso{
 xyplot.easing easingLineChart getEasingData

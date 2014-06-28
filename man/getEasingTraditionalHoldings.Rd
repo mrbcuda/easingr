@@ -23,10 +23,8 @@ Downloads the Cleveland FRB data product for credit easing policy tools traditio
 }
 }
 \examples{
-\dontrun{
 th <- getEasingTraditionalHoldings()
 head(th$df)
-}
 }
 \seealso{
 getEasingData getEasingSummary getEasingDetails getEasingLending getEasingCreditDepository getEasingCredtExtensions getEasingProvidingLiquidity getEasingMaidenLane  getEasingAgencyDebt getEasingLongTermPurchases

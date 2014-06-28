@@ -26,10 +26,8 @@ Downloads the Cleveland FRB data product for credit easing policy tools providin
 }
 }
 \examples{
-\dontrun{
 pl <- getEasingProvidingLiquidity()
 head(pl$df)
-}
 }
 \seealso{
 getEasingData getEasingSummary getEasingDetails getEasingLending getEasingCreditDepository getEasingCredtExtensions getEasingMaidenLane getEasingTraditionalHoldings  getEasingAgencyDebt getEasingLongTermPurchases

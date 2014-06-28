@@ -14,10 +14,9 @@
 Provides a convenience function for passing an \code{easing} object to \code{xyplot}.
 }
 \examples{
-\dontrun{
+require(lattice)
 ad <- getEasingAgencyDebt()
 xyplot(ad)
-}
 }
 \seealso{
 easingLineChart easingAreaChart getEasingData
