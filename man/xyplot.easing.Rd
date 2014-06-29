@@ -3,7 +3,7 @@
 \alias{xyplot.easing}
 \title{Credit easing data xyplot}
 \usage{
-\method{xyplot}{easing}(x, ...)
+xyplot.easing(x, ...)
 }
 \arguments{
 \item{x}{an object of class \code{easing} as returned by \code{\link[easingr]{getEasingData}} and its many offspring.}
@@ -14,9 +14,11 @@
 Provides a convenience function for passing an \code{easing} object to \code{xyplot}.
 }
 \examples{
+\dontrun{
 require(lattice)
 ad <- getEasingAgencyDebt()
 xyplot(ad)
+}
 }
 \seealso{
 easingLineChart easingAreaChart getEasingData

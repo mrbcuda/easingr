@@ -6,10 +6,11 @@
 #' @export
 #' @seealso easingLineChart easingAreaChart getEasingData
 #' @examples
+#' \dontrun{
 #' require(lattice)
 #' ad <- getEasingAgencyDebt()
 #' xyplot(ad)
-#' 
+#' }
 xyplot.easing <- function(x,...) {
   xyplot(x$df,
          main=x$main,
@@ -29,9 +30,10 @@ xyplot.easing <- function(x,...) {
 #' @export
 #' @seealso xyplot.easing easingAreaChart getEasingData
 #' @examples
-#' s <- getEasingSummary()
-#' easingLineChart(s)
-#' 
+#' \dontrun{
+#' es <- getEasingSummary()
+#' easingLineChart(es)
+#' }
 easingLineChart <- function(e) {
   stopifnot(class(e) == "easing")
   
@@ -65,8 +67,8 @@ easingLineChart <- function(e) {
 #' @export
 #' @seealso xyplot.easing easingLineChart getEasingData
 #' @examples
-#' ed <- getEasingDetails()
-#' easingAreaChart(ed)
+#' es <- getEasingSummary()
+#' easingAreaChart(es)
 #'
 easingAreaChart <- function(e) {
   stopifnot(class(e) == "easing")

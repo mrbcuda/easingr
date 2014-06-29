@@ -24,8 +24,10 @@ Downloads the Cleveland FRB data product for credit easing policy tools federal 
 }
 }
 \examples{
+\dontrun{
 ad <- getEasingAgencyDebt()
 head(ad$df)
+}
 }
 \seealso{
 getEasingData getEasingSummary getEasingDetails getEasingLending getEasingCreditDepository getEasingCredtExtensions getEasingProvidingLiquidity getEasingMaidenLane  getEasingTraditionalHoldings getEasingLongTermPurchases

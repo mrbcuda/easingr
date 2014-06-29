@@ -23,8 +23,10 @@ Downloads the Cleveland FRB data product for credit easing policy tools long-ter
 }
 }
 \examples{
+\dontrun{
 lt <- getEasingLongTermPurchases()
 head(lt$df)
+}
 }
 \seealso{
 getEasingData getEasingSummary getEasingDetails getEasingLending getEasingCreditDepository getEasingCredtExtensions getEasingProvidingLiquidity getEasingMaidenLane  getEasingTraditionalHoldings getEasingAgencyDebt

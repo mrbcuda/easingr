@@ -25,8 +25,10 @@ Downloads the Cleveland FRB data product for credit easing policy credit to depo
 }
 }
 \examples{
+\dontrun{
 cd <- getEasingCreditDepository()
 head(cd$df)
+}
 }
 \seealso{
 getEasingData getEasingSummary getEasingDetails getEasingLending getEasingCreditExtensions getEasingProvidingLiquidity getEasingMaidenLane getEasingTraditionalHoldings  getEasingAgencyDebt getEasingLongTermPurchases
