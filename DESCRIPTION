@@ -1,11 +1,11 @@
 Package: easingr
-Title: Fetch the Cleveland Federal Reserve Bank easing policy tool data.
+Title: Fetch and plot credit easing policy tool data.
 Version: 1.0.0
 Date: 2014-06-27
 Author: Matt Barry <mrb@softisms.com>
 Maintainer: Matt Barry <mrb@softisms.com>
 Description: Forms queries to submit to the Cleveland Federal Reserve Bank web
-    site's easing policy tools data site.  Provides various query functions
+    site's credit easing policy tools data site.  Provides various query functions
     according to the easing data desired.  By default the download includes
     easing tool weekly time series data starting January 2007.  The functions
     return a class of type easing which contains a list of items related to the
