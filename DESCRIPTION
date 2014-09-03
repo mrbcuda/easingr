@@ -1,7 +1,7 @@
 Package: easingr
 Title: Fetch and plot credit easing policy tool data.
-Version: 1.0.0
-Date: 2014-06-27
+Version: 1.0.1
+Date: 2014-09-02
 Author: Matt Barry <mrb@softisms.com>
 Maintainer: Matt Barry <mrb@softisms.com>
 Description: Forms queries to submit to the Cleveland Federal Reserve Bank web
