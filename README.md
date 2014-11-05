@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/mrbcuda/easingr.png?branch=master)](https://travis-ci.org/mrbcuda/easingr)
+
 Credit Easing Policy Tools
 ==========================
 
